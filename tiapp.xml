@@ -6,7 +6,7 @@
     <property name="acs-base-url" type="string">https://api.cloud.appcelerator.com</property>
     <property name="acs-api-key" type="string"/>
     <id>com.axway.fingerprintauth</id>
-    <name>FingerPrintAuth</name>
+    <name>Bio Auth</name>
     <version>1.0</version>
     <publisher>dmason</publisher>
     <url/>
