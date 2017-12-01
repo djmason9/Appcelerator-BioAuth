@@ -1,18 +1,9 @@
-Welcome to your Appcelerator Titanium Mobile Project
+## Bio Auth Demo App
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+This project gives an overview of native components available in Titanium. 
+The components are grouped into multiple groups and can be logged in the "Logs" tab. 
+It also includes full support for iOS, Android & Windows.
 
+<img width="800" src="/djmason9/Appcelerator-BioAuth/blob/BaseApplicationLogin/screenshots/screenshot1.png?raw=true" alt="screenshot1.png">
 
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2008-2016 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+### Features
