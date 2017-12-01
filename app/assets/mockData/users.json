@@ -1,0 +1,23 @@
+{
+	"UserStats": [
+		{
+			"Name": "Darren",
+			"Status": "online"
+		},{
+			"Name": "Jason",
+			"Status": "online"
+		},{
+			"Name": "Meetesh",
+			"Status": "offline"
+		},{
+			"Name": "Aaron",
+			"Status": "online"
+		},{
+			"Name": "Bill",
+			"Status": "offline"
+		},{
+			"Name": "Steve",
+			"Status": "online"
+		}
+	]
+}

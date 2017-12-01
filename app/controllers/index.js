@@ -5,6 +5,12 @@ var TouchId = require("ti.touchid"),
 var userName = "admin",
     password = "pass";
 
+	 // Makes this global so I can access
+Alloy.Globals.pushViewOnController = function(viewName,opts) { 
+    // console.log(view);     
+    $.getView().openWindow(Alloy.createController(viewName,opts).getView());
+};
+    
 //constructor
 (function main() {
 
@@ -71,15 +77,25 @@ var userName = "admin",
 	};
 
 	TiAuth.doAuth = function(didPassBio) {
-		if (password == $.passWrdTxt.value && userName == $.userNmTxt.value || didPassBio) {
-			alert("You have successfully logged in!");
+		if (password == $.passWrdTxt.value && userName == $.userNmTxt.value || didPassBio) {		
+    
+			var win1 = Alloy.createController("userList").getView();	
+	        if (OS_IOS) {
+	            win1.open({
+	                transition : Ti.UI.iOS.AnimationStyle.FLIP_FROM_LEFT,
+	                duration : 500
+	            });
+	        } else {
+	            win1.open();
+	        }
+        
 		} else {
 			alert("You have failed to login!" + Alloy.Globals.isIphoneX);
 		}
 
 	};
 
-	$.index.open();
+	$.login.open();
 
 })();
 

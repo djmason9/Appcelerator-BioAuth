@@ -1,0 +1,18 @@
+<Alloy>
+	<Collection src="userModel"/>
+	<Window class="container" id="userList" title="User List" >
+		<View>
+			<ListView width="100%">
+				<HeaderView>
+					<View backgroundColor="#ddd" height="30">
+						<Label class="status">Online</Label>
+						<Label class="userName">User Name</Label>
+					</View>
+				</HeaderView>
+				<ListSection dataCollection="userModel">
+					<ListItem  image="/images/{Status}.png" height="40" title="{Name}"/>
+				</ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

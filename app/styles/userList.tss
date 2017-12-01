@@ -1,0 +1,10 @@
+
+".container" : {
+  top:50
+}
+".status" : {
+	left : 5
+},
+".userName" : {
+	left : 75
+}

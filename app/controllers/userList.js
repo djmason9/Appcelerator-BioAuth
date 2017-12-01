@@ -1,0 +1,1 @@
+Alloy.Collections.userModel.fetch(); 

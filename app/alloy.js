@@ -8,5 +8,16 @@
 /images/android/res-xxhdpi/image.png	300×300
 
 */
+var mocx = require("mocx");
 
 Alloy.Globals.isIphoneX = (Ti.Platform.displayCaps.platformHeight == 812);
+
+(function constructor(){
+
+// Create Mock Users from fake data
+var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'mockData/users.json');
+	preparse = file.read().text,
+	response = JSON.parse(preparse);
+    
+	mocx.createCollection("userModel", response.UserStats);
+})();

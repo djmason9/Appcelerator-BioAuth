@@ -16,10 +16,12 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>c470b1dc-f82c-4236-9555-ad041e1eda01</guid>
+    <guid>c470b1dc-f82c-4236-9555-ad041e1eda01</guid>    
+    
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
     <ios>
+    	<default-background-color>#de2d32</default-background-color>
         <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
         <use-app-thinning>true</use-app-thinning>
         <plist>

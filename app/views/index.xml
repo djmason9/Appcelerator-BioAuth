@@ -1,5 +1,5 @@
 <Alloy>
-    <Window class="container" layout="vertical">
+    <Window class="container" layout="vertical" id="login">
     	<ImageView id="bannerImgView"/>
         <Label id="userNmLbl"/>
         <TextField id="userNmTxt"/>
