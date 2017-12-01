@@ -1,0 +1,61 @@
+".container" : {
+	"backgroundColor" : "#fff",
+	"top": "6%"
+},
+"#userNmLbl": {
+	"text": "User Name",
+	"top": "30%",
+	"center": "50%",
+	"height": "6%",
+	"textAlign": "center",
+	"width": "50%"
+},
+"#userNmTxt": {
+	"width": "41.33%",
+	"height": "4.90%",
+	"borderRadius": "10",
+	"borderColor": "#E5E5E5",
+	"borderWidth": "1",
+	"top": "5",
+	"center": "50%",
+	"returnKeyType": Titanium.UI.RETURNKEY_NEXT,
+	"suppressReturn": "true",
+	"autocapitalization": Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE
+},
+"#passwordLbl": {
+	"text": "Password",
+	"top": "5",
+	"center": "50%",
+	"height": "6%",
+	"textAlign": "center",
+	"width": "50%"
+},
+"#passWrdTxt": {
+	"width": "41.33%",
+	"height": "4.90%",
+	"borderRadius": "10",
+	"borderColor": "#E5E5E5",
+	"borderWidth": "1",
+	"top": "5",
+	"center": "50%",
+	"returnKeyType": Titanium.UI.RETURNKEY_GO,
+	"autocapitalization": Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	"passwordMask": "true"
+},
+"#loginBtn":{
+	"title": "Sign In",
+	"center": "50%",
+	"height": "11.20%",
+	"top" : "5"
+},
+"#thumbprintBtn": {
+	"top": "5",
+	"center": "50%",
+	"height": "50",
+	"width": "50",
+	"backgroundImage": "/images/fingerprint.png",
+	"backgroundColor": "transparent"
+},
+"#thumbprintBtn[if=Alloy.Globals.isIphoneX]": {
+	"backgroundImage": "/images/faceId.png",
+}
