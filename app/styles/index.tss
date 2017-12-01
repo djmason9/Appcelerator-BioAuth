@@ -4,19 +4,14 @@
 },
 "#userNmLbl": {
 	"text": "User Name",
-	"top": "30%",
+	"top": "10%",
 	"center": "50%",
-	"height": "6%",
-	"textAlign": "center",
-	"width": "50%"
+	"textAlign": "center"
 },
 "#userNmTxt": {
-	"width": "41.33%",
-	"height": "4.90%",
 	"borderRadius": "10",
 	"borderColor": "#E5E5E5",
 	"borderWidth": "1",
-	"top": "5",
 	"center": "50%",
 	"returnKeyType": Titanium.UI.RETURNKEY_NEXT,
 	"suppressReturn": "true",
@@ -24,19 +19,13 @@
 },
 "#passwordLbl": {
 	"text": "Password",
-	"top": "5",
 	"center": "50%",
-	"height": "6%",
-	"textAlign": "center",
-	"width": "50%"
+	"textAlign": "center"
 },
 "#passWrdTxt": {
-	"width": "41.33%",
-	"height": "4.90%",
 	"borderRadius": "10",
 	"borderColor": "#E5E5E5",
 	"borderWidth": "1",
-	"top": "5",
 	"center": "50%",
 	"returnKeyType": Titanium.UI.RETURNKEY_GO,
 	"autocapitalization": Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
@@ -45,7 +34,6 @@
 "#loginBtn":{
 	"title": "Sign In",
 	"center": "50%",
-	"height": "11.20%",
 	"top" : "5"
 },
 "#thumbprintBtn": {

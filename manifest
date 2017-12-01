@@ -1,8 +1,8 @@
-#appname: FingerPrintAuth
-#publisher: dmason
-#url: 
-#image: appicon.png
-#appid: com.axway.fingerprintauth
-#desc: undefined
-#type: mobile
-#guid: c470b1dc-f82c-4236-9555-ad041e1eda01
+#appname:FingerPrintAuth
+#publisher:dmason
+#url:undefined
+#image:appicon.png
+#appid:com.axway.fingerprintauth
+#desc:undefined
+#type:mobile
+#guid:c470b1dc-f82c-4236-9555-ad041e1eda01

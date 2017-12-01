@@ -1,10 +1,11 @@
 <Alloy>
     <Window class="container" layout="vertical">
+    	<ImageView id="bannerImgView"/>
         <Label id="userNmLbl"/>
         <TextField id="userNmTxt"/>
         <Label id="passwordLbl"/>
         <TextField id="passWrdTxt" onReturn="authenticate"/>
-        <Button id="loginBtn" onClick="authenticate"/>
+        <Button id="loginBtn" onClick="authenticate" class="allButtons"/>
         <Button id="thumbprintBtn" platform="ios" onClick="thumbPrint" visible="false"/>
     </Window>
 </Alloy>

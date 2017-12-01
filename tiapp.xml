@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="active-environment-name" type="string">development</property>
+    <property name="active-environment-id" type="string">development</property>
+    <property name="acs-authbase-url" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-api-key" type="string"/>
     <id>com.axway.fingerprintauth</id>
     <name>FingerPrintAuth</name>
     <version>1.0</version>
     <publisher>dmason</publisher>
     <url/>
-    <description/>
+    <description>undefined</description>
     <copyright>2017 by dmason</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -55,7 +60,7 @@
         <module platform="android">ti.touchid</module>
     </modules>
     <deployment-targets>
-        <target device="android">false</target>
+        <target device="android">true</target>
         <target device="ipad">false</target>
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
