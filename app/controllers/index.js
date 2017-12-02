@@ -74,7 +74,7 @@ var userName = "admin",
 		if (password == $.passWrdTxt.value && userName == $.userNmTxt.value || didPassBio) {
 			alert("You have successfully logged in!");
 		} else {
-			alert("You have failed to login!" + Alloy.Globals.isIphoneX);
+			alert("You have failed to login!");
 		}
 
 	};
