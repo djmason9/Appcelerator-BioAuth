@@ -21,7 +21,7 @@
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
     <ios>
-    	<default-background-color>#de2d32</default-background-color>
+    	<default-background-color>#fff</default-background-color>
         <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
         <use-app-thinning>true</use-app-thinning>
         <plist>

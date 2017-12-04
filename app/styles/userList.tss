@@ -1,6 +1,6 @@
 
 ".container" : {
-  top:50
+  top:75
 }
 ".status" : {
 	left : 5

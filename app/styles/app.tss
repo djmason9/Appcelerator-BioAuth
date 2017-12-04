@@ -17,7 +17,9 @@ overrode the settings with other TSS, XML, or JS settings:
 	height: Ti.UI.SIZE
 }
 */
-
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent or black
+},
 "Label": {
 	"color" : "#000", // all platforms except Android and Windows default to black
 	"height" : "45",
