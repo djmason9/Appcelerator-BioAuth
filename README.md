@@ -15,4 +15,4 @@ It also includes full support for iOS, Android.
 
 <img width="700" src="https://github.com/djmason9/Appcelerator-BioAuth/blob/BaseApplicationLogin/screenshots/dblscreenshot2.png?raw=true" alt="screen shot"  border="1">
 
-<img width="350" src="https://github.com/djmason9/djmason9/Appcelerator-BioAuth/blob/BaseApplicationMockData/screenshots/userList.jpg?raw=true" alt="User List" border="1">
+<img src="/djmason9/Appcelerator-BioAuth/blob/master/screenshots/userList.jpg?raw=true" alt="userList.jpg" width="350">
