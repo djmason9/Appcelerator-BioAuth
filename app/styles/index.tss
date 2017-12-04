@@ -1,6 +1,6 @@
 ".container" : {
 	"backgroundColor" : "#fff",
-	"top": "6%"
+	"top": "20"
 },
 "#userNmLbl": {
 	"text": "User Name",
