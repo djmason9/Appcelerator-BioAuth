@@ -9,19 +9,18 @@
     <name>Bio Auth</name>
     <version>1.0</version>
     <publisher>dmason</publisher>
-    <url/>
+    <url>undefined</url>
     <description>undefined</description>
     <copyright>2017 by dmason</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>c470b1dc-f82c-4236-9555-ad041e1eda01</guid>    
-    
+    <guid>c470b1dc-f82c-4236-9555-ad041e1eda01</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="run-on-main-thread" type="bool">true</property>
     <ios>
-    	<default-background-color>#fff</default-background-color>
+        <default-background-color>#fff</default-background-color>
         <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
         <use-app-thinning>true</use-app-thinning>
         <plist>

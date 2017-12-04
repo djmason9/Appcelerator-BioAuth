@@ -1,7 +1,7 @@
 exports.definition = {
 	config: {
 		adapter: {
-			type: "sql", // <-- name of custome adapter
+			type: "sql", // <-- name of custom adapter
 			collection_name: "userModel"
 		},
 		// Gets the parent node of our Array
