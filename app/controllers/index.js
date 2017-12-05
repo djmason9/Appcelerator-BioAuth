@@ -73,18 +73,21 @@ var userName = "admin",
 	TiAuth.doAuth = function(didPassBio) {
 		if (password == $.passWrdTxt.value && userName == $.userNmTxt.value || didPassBio) {		
     
-			var win1 = Alloy.createController("userListNav").getView();	
+			var win1 = Alloy.createController("userList").getView();	//android 
+			var opt = {};
+			
 	        if (OS_IOS) {
-	            win1.open({
+	        	win1 = Alloy.createController("userListNav").getView();	 //ios
+	            opt = {
 	                transition : Ti.UI.iOS.AnimationStyle.FLIP_FROM_LEFT,
 	                duration : 500
-	            });
-	        } else {
-	            win1.open();
-	        }
+	            };
+	        } 
+	        
+	        win1.open(opt);
         
 		} else {
-			alert("You have failed to login!" + Alloy.Globals.isIphoneX);
+			alert("You have failed to login!");
 		}
 
 	};

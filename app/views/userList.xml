@@ -1,7 +1,13 @@
 <Alloy>
 	<Collection src="userModel"/>
 	<Window class="container" id="userList">
-		<ListView width="100%" onItemclick="userDetail">
+		<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate">
+			 <Templates>
+                <ItemTemplate id="detailTemplate" name="listTemplate">
+                    <ImageView bindId="status" class="status" text=""/>
+                    <Label bindId="name" class="userName" text=""/>
+                </ItemTemplate>
+            </Templates>
 			<HeaderView>
 				<View backgroundColor="#ddd" height="30">
 					<Label class="status">Online</Label>
@@ -9,7 +15,7 @@
 				</View>
 			</HeaderView>
 			<ListSection dataCollection="userModel">
-				<ListItem  image="/images/{status}.png" height="40" title="{name}"/>
+				<ListItem  status:image="/images/{status}.png" name:text="{name}" height="40" />
 			</ListSection>
 		</ListView>
 	</Window>
