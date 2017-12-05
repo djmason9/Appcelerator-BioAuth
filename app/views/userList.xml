@@ -15,7 +15,7 @@
 				</View>
 			</HeaderView>
 			<ListSection dataCollection="userModel">
-				<ListItem  status:image="/images/{status}.png" name:title="{name}" height="40" />
+				<ListItem  status:image="/images/{status}.png" name:text="{name}" height="40" />
 			</ListSection>
 		</ListView>
 	</Window>
