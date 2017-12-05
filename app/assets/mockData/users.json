@@ -1,23 +1,23 @@
 {
 	"UserStats": [
 		{
-			"Name": "Darren",
-			"Status": "online"
+			"name": "Darren",
+			"status": "online"
 		},{
-			"Name": "Jason",
-			"Status": "online"
+			"name": "Jason",
+			"status": "online"
 		},{
-			"Name": "Meetesh",
-			"Status": "offline"
+			"name": "Meetesh",
+			"status": "offline"
 		},{
-			"Name": "Aaron",
-			"Status": "online"
+			"name": "Aaron",
+			"status": "online"
 		},{
-			"Name": "Bill",
-			"Status": "offline"
+			"name": "Bill",
+			"status": "offline"
 		},{
-			"Name": "Steve",
-			"Status": "online"
+			"name": "Steve",
+			"status": "online"
 		}
 	]
 }
