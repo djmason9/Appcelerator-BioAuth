@@ -4,12 +4,6 @@ var TouchId = require("ti.touchid"),
 //These could be pulled from keychain http://docs.appcelerator.com/platform/latest/#!/api/Modules.TouchId.KeychainItem
 var userName = "admin",
     password = "pass";
-
-	 // Makes this global so I can access
-Alloy.Globals.pushViewOnController = function(viewName,opts) { 
-    // console.log(view);     
-    $.getView().openWindow(Alloy.createController(viewName,opts).getView());
-};
     
 //constructor
 (function main() {
