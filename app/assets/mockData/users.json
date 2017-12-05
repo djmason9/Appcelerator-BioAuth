@@ -1,23 +1,35 @@
 {
 	"UserStats": [
 		{
-			"Name": "Darren",
-			"Status": "online"
+			"name": "Darren",
+			"status": "online",
+			"location" : "Phoenix",
+			"phone" : "555-1234"
 		},{
-			"Name": "Jason",
-			"Status": "online"
+			"name": "Jason",
+			"status": "online",
+			"location" : "England",
+			"phone" : "555-5564"
 		},{
-			"Name": "Meetesh",
-			"Status": "offline"
+			"name": "Meetesh",
+			"status": "offline",
+			"location" : "Dallas",
+			"phone" : "555-5889"
 		},{
-			"Name": "Aaron",
-			"Status": "online"
+			"name": "Aaron",
+			"status": "online",
+			"location" : "Las Vegas",
+			"phone" : "555-6654"
 		},{
-			"Name": "Bill",
-			"Status": "offline"
+			"name": "Bill",
+			"status": "offline",
+			"location" : "Springfield",
+			"phone" : "555-7884"
 		},{
-			"Name": "Steve",
-			"Status": "online"
+			"name": "Steve",
+			"status": "online",
+			"location" : "Washington DC",
+			"phone" : "555-1457"
 		}
 	]
 }

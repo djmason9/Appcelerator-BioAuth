@@ -9,7 +9,7 @@
 				</View>
 			</HeaderView>
 			<ListSection dataCollection="userModel">
-				<ListItem  image="/images/{Status}.png" height="40" title="{Name}"/>
+				<ListItem  image="/images/{status}.png" height="40" title="{name}"/>
 			</ListSection>
 		</ListView>
 	</Window>

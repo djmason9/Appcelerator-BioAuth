@@ -1,9 +1,11 @@
 <Alloy>
-	<!-- <Model src="detail"></Model> -->
-    <Window class="container" id="userDetails" title="User Details" >
-        <View layout="vertical" top="20">
-            <!-- <ImageView image="images/user.png" id="avatar"/> -->
-            <!-- <Label id="detailName">{detail.name}</Label> -->                        
-        </View>     
-    </Window>
+	<Model src="details"></Model>
+	<Window class="container" id="userDetails" title="User Details">
+		<View layout="vertical" top="20">
+			<Label id="detailName">NAME: {details.name}</Label>
+			<Label id="detailStatus">STATUS: {details.status}</Label>
+			<Label id="detailPhone">PHONE: {details.phone}</Label>
+			<Label id="detailLoc">LOCATION: {details.location}</Label>
+		</View>
+	</Window>
 </Alloy>

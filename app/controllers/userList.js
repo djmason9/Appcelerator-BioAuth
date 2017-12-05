@@ -17,12 +17,16 @@ function userDetail(e) {
 	if (OS_IOS) {
 		Alloy.Globals.pushViewOnController("userDetails", {
 			"name" : json.name,
-			"status" : json.status
+			"status" : json.status,
+			"phone" : json.phone,
+			"location" : json.location
 		});
 	} else {
 		var win1 = Alloy.createController("userDetails", {
 			"name" : json.name,
-			"status" : json.status
+			"status" : json.status,
+			"phone" : json.phone,
+			"location" : json.location
 		}).getView();
 		win1.open();
 	}
