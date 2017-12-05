@@ -1,22 +1,22 @@
-&lt;Alloy&gt;
-	&lt;Collection src="userModel"/&gt;
-	&lt;Window class="container" id="userList"&gt;
-		&lt;ListView width="100%" onItemclick="userDetail"&gt;
-			 &lt;Templates&gt;
-                &lt;ItemTemplate id="detailTemplate" name="detailTemplate"&gt;
-                    &lt;ImageView bindId="status" class="status" text=""/&gt;
-                    &lt;Label bindId="name" class="userName" text=""/&gt;
-                &lt;/ItemTemplate&gt;
-            &lt;/Templates&gt;
-			&lt;HeaderView&gt;
-				&lt;View backgroundColor="#ddd" height="30"&gt;
-					&lt;Label class="status"&gt;Online&lt;/Label&gt;
-					&lt;Label class="userName"&gt;User Name&lt;/Label&gt;
-				&lt;/View&gt;
-			&lt;/HeaderView&gt;
-			&lt;ListSection dataCollection="userModel"&gt;
-				&lt;ListItem  status:image="/images/{status}.png" name:title="{name}" height="40" /&gt;
-			&lt;/ListSection&gt;
-		&lt;/ListView&gt;
-	&lt;/Window&gt;
-&lt;/Alloy&gt;
+<Alloy>
+	<Collection src="userModel"/>
+	<Window class="container" id="userList">
+		<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate">
+			 <Templates>
+                <ItemTemplate id="detailTemplate" name="listTemplate">
+                    <ImageView bindId="status" class="status" text=""/>
+                    <Label bindId="name" class="userName" text=""/>
+                </ItemTemplate>
+            </Templates>
+			<HeaderView>
+				<View backgroundColor="#ddd" height="30">
+					<Label class="status">Online</Label>
+					<Label class="userName">User Name</Label>
+				</View>
+			</HeaderView>
+			<ListSection dataCollection="userModel">
+				<ListItem  status:image="/images/{status}.png" name:title="{name}" height="40" />
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>
