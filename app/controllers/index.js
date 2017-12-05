@@ -84,7 +84,7 @@ var userName = "admin",
 	        }
         
 		} else {
-			alert("You have failed to login!" + Alloy.Globals.isIphoneX);
+			alert("You have failed to login!");
 		}
 
 	};
