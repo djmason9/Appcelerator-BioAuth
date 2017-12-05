@@ -1,7 +1,7 @@
 <Alloy>
 	<Collection src="userModel"/>
 	<Window class="container" id="userList">
-		<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate">
+		<ListView width="100%" defaultItemTemplate="listTemplate">
 			 <Templates>
                 <ItemTemplate id="detailTemplate" name="listTemplate">
                     <ImageView bindId="status" class="status" text=""/>
