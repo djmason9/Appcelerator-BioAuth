@@ -1,6 +1,6 @@
 <Alloy>
 	<Collection src="userModel"/>
-	<Window class="container" id="userList">
+	<Window class="container" id="userList" title="Users">
 		<ListView width="100%" defaultItemTemplate="listTemplate">
 			 <Templates>
                 <ItemTemplate id="detailTemplate" name="listTemplate">
