@@ -1,0 +1,6 @@
+<Alloy>
+	<Require platform="android" src="userList"/>
+	<NavigationWindow class="container" id="userListNav" platform="ios">
+		<Require src="userList"/>
+	</NavigationWindow>
+</Alloy>

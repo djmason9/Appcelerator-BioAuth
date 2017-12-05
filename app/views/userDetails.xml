@@ -1,0 +1,9 @@
+<Alloy>
+	<!-- <Model src="detail"></Model> -->
+    <Window class="container" id="userDetails" title="User Details" >
+        <View layout="vertical" top="20">
+            <!-- <ImageView image="images/user.png" id="avatar"/> -->
+            <!-- <Label id="detailName">{detail.name}</Label> -->                        
+        </View>     
+    </Window>
+</Alloy>

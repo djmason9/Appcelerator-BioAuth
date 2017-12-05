@@ -5,12 +5,6 @@ var TouchId = require("ti.touchid"),
 var userName = "admin",
     password = "pass";
 
-	 // Makes this global so I can access
-Alloy.Globals.pushViewOnController = function(viewName,opts) { 
-    // console.log(view);     
-    $.getView().openWindow(Alloy.createController(viewName,opts).getView());
-};
-    
 //constructor
 (function main() {
 
@@ -79,7 +73,7 @@ Alloy.Globals.pushViewOnController = function(viewName,opts) {
 	TiAuth.doAuth = function(didPassBio) {
 		if (password == $.passWrdTxt.value && userName == $.userNmTxt.value || didPassBio) {		
     
-			var win1 = Alloy.createController("userList").getView();	
+			var win1 = Alloy.createController("userListNav").getView();	
 	        if (OS_IOS) {
 	            win1.open({
 	                transition : Ti.UI.iOS.AnimationStyle.FLIP_FROM_LEFT,
