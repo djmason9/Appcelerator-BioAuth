@@ -4,8 +4,8 @@
 		<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate">
 			 <Templates>
                 <ItemTemplate id="detailTemplate" name="listTemplate">
-                    <ImageView bindId="status" class="status" text=""/>
-                    <Label bindId="name" class="userName" text=""/>
+                    <ImageView bindId="status" class="rowStatus" text=""/>
+                    <Label bindId="name" class="rowUserName" text=""/>
                 </ItemTemplate>
             </Templates>
 			<HeaderView>
