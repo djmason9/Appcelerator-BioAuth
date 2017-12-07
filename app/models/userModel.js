@@ -7,7 +7,7 @@ exports.definition = {
 		// Gets the parent node of our Array
         parentNode: function(data) {
             data = data || [];
-            return data.UserStats || data;
+            return data.userstats || data;
         }
 	},
 	extendModel: function(Model) {
