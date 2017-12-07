@@ -1,13 +1,18 @@
 exports.definition = {
 	config: {
+		URL: "http://192.168.1.16:8080/api/userstats",
 		adapter: {
-			type: "sql", // <-- name of custom adapter
-			collection_name: "userModel"
+			type: "restapi",
+			collection_name: "userModel",
+			idAttribute: "id"
 		},
-		// Gets the parent node of our Array
+		headers: {
+            "Authorization": 'Basic ' + 
+            Ti.Utils.base64encode('0BpSouyN7Qk7gUbglMPZuJAXgENBihcZ:'),
+        },
         parentNode: function(data) {
             data = data || [];
-            return data.UserStats || data;
+            return data.userstats || data;
         }
 	},
 	extendModel: function(Model) {
@@ -21,3 +26,4 @@ exports.definition = {
 		return Collection;
 	}
 };
+

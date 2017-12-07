@@ -9,9 +9,6 @@
 	"textAlign": "center"
 },
 "#userNmTxt": {
-	"borderRadius": "10",
-	"borderColor": "#E5E5E5",
-	"borderWidth": "1",
 	"center": "50%",
 	"returnKeyType": Titanium.UI.RETURNKEY_NEXT,
 	"suppressReturn": "true",
@@ -23,9 +20,6 @@
 	"textAlign": "center"
 },
 "#passWrdTxt": {
-	"borderRadius": "10",
-	"borderColor": "#E5E5E5",
-	"borderWidth": "1",
 	"center": "50%",
 	"returnKeyType": Titanium.UI.RETURNKEY_GO,
 	"autocapitalization": Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,

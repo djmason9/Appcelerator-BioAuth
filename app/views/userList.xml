@@ -1,22 +1,55 @@
 <Alloy>
 	<Collection src="userModel"/>
 	<Window class="container" id="userList" title="Users">
-		<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate">
-			 <Templates>
-                <ItemTemplate id="detailTemplate" name="listTemplate">
-                    <ImageView bindId="status" class="status" text=""/>
-                    <Label bindId="name" class="userName" text=""/>
-                </ItemTemplate>
-            </Templates>
-			<HeaderView>
-				<View backgroundColor="#ddd" height="30">
-					<Label class="status">Online</Label>
-					<Label class="userName">User Name</Label>
+		<View layout="vertical" id="containerView">
+			<View id="addNewBtnView">
+				<Button onClick="showHide" title="Add User" id="addNewBtn"/>
+			</View>
+			<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate" id="userListView">
+				<Templates>
+					<ItemTemplate id="detailTemplate" name="listTemplate">
+						<ImageView bindId="status" class="rowStatus" text=""/>
+						<Label bindId="name" class="rowUserName" text=""/>
+					</ItemTemplate>
+				</Templates>
+				<HeaderView>
+					<View backgroundColor="#ddd" height="30">
+						<Label class="status">
+							Online
+						</Label>
+						<Label class="userName">
+							User Name
+						</Label>
+					</View>
+				</HeaderView>
+				<ListSection dataCollection="userModel">
+					<ListItem  status:image="/images/{status}.png" name:text="{name}" height="50" />
+				</ListSection>
+			</ListView>
+		</View>
+		<View id="createNewModal">
+			<ScrollView id="createNew" layout="vertical">
+				<Label id="detailName">
+					NAME:
+				</Label>
+				<TextField id="name"/>
+				<Label id="detailStatus">
+					STATUS:
+				</Label>
+				<TextField id="status"/>
+				<Label id="detailPhone">
+					PHONE:
+				</Label>
+				<TextField id="phone"/>
+				<Label id="detailLoc">
+					LOCATION:
+				</Label>
+				<TextField id="loc"/>
+				<View layout="horizontal" id="btnsView">
+					<Button onClick="doCreate" title="Create" id="createBtn"/>
+					<Button onClick="showHide" title="Cancel" id="cancelBtn"/>
 				</View>
-			</HeaderView>
-			<ListSection dataCollection="userModel">
-				<ListItem  status:image="/images/{status}.png" name:text="{name}" height="40" />
-			</ListSection>
-		</ListView>
+			</ScrollView>
+		</View>
 	</Window>
 </Alloy>

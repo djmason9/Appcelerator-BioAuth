@@ -33,7 +33,10 @@ overrode the settings with other TSS, XML, or JS settings:
 "TextField" : {
 	color: "black",
 	height : "45",
-	width : "41.33%"
+	width : "41.33%",
+	borderColor : "#E5E5E5",
+	borderWidth : "1",
+	borderRadius : "10"
 },
 ".allButtons" : {
 	height : "40",

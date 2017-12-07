@@ -1,10 +1,64 @@
 
-".container" : {
-  top:75
-}
-".status" : {
-	left : 5
+".container": {
+	backgroundColor: "#00FF0000"
 },
-".userName" : {
-	left : 75
+"#containerView":{
+	height: "100%"
+},
+
+"#addNewBtnView":{
+	height: 75,
+	left: 0,
+	width: "100%",
+	top: 0
+},
+"#addNewBtn":{
+	right: 10,
+	top: "45%",
+	color: "white"
+},
+".status": {
+	left: 5
+},
+".userName": {
+	left: 75
+},
+".rowStatus": {
+	left: 10,
+	width: 25,
+	height: 25
+},
+".rowUserName": {
+	left: 75
+},
+"#createNew":{
+	width: "90%",
+	height: 500,
+	backgroundColor: "white",
+	borderRadius: 10
+},
+"#createNewModal": {
+	width: "100%",
+	height: "100%",
+	backgroundColor: "lightGray",
+	top: "100%"
+},
+"#btnsView":{
+	width: "100%",
+	height: 60
+},
+"#createBtn":{
+	top: 5,
+	left: 25
+},
+"#cancelBtn":{
+	top: 5,
+	left: 25
+},
+"Label":{
+	left: 20
+},
+"TextField":{
+	left: 20,
+	width: "85%"
 }
