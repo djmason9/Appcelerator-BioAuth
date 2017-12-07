@@ -36,6 +36,7 @@ var wasShown = false,
 			$.loc.value = "";
 			$.status.value = "";
 
+			showHide();
 		} else {
 			alert("Enter a name!");
 		}
@@ -118,6 +119,5 @@ function showHide(e) {
  */
 function doCreate(e) {
 	tiUserList.createNewUser();
-	showHide();
 }
 

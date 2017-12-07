@@ -41,7 +41,9 @@ overrode the settings with other TSS, XML, or JS settings:
 },
 ".allButtons" : {
 	height : "40",
-	width : "41.33%"
+	width : "41.33%",
+	backgroundColor : "#00000000",
+	color : "black"
 }
 
 
