@@ -1,10 +1,17 @@
-
 ".container" : {
   top:75
-}
+},
 ".status" : {
 	left : 5
 },
 ".userName" : {
+	left : 75
+},
+".rowStatus" : {
+	left : 10,
+	width : 25,
+	height: 25
+},
+".rowUserName" : {
 	left : 75
 }
