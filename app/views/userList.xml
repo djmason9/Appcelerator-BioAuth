@@ -1,31 +1,33 @@
 <Alloy>
 	<Collection src="userModel"/>
 	<Window class="container" id="userList" title="Users">
-		<View layout="vertical" id="containerView">
+		<View layout="vertical">
 			<View id="addNewBtnView">
-				<Button onClick="showHide" title="Add User" id="addNewBtn"/>
+				<Button onClick="showHide" title="Add User" id="addNewBtn" class="allButtons"/>
 			</View>
-			<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate" id="userListView">
-				<Templates>
-					<ItemTemplate id="detailTemplate" name="listTemplate">
-						<ImageView bindId="status" class="rowStatus" text=""/>
-						<Label bindId="name" class="rowUserName" text=""/>
-					</ItemTemplate>
-				</Templates>
-				<HeaderView>
-					<View backgroundColor="#ddd" height="30">
-						<Label class="status">
-							Online
-						</Label>
-						<Label class="userName">
-							User Name
-						</Label>
-					</View>
-				</HeaderView>
-				<ListSection dataCollection="userModel">
-					<ListItem  status:image="/images/{status}.png" name:text="{name}" height="50" />
-				</ListSection>
-			</ListView>
+			<View layout="vertical" id="containerView">
+				<ListView width="100%" onItemclick="userDetail" defaultItemTemplate="listTemplate" id="userListView">
+					<Templates>
+						<ItemTemplate id="detailTemplate" name="listTemplate">
+							<ImageView bindId="status" class="rowStatus" text=""/>
+							<Label bindId="name" class="rowUserName" text=""/>
+						</ItemTemplate>
+					</Templates>
+					<HeaderView>
+						<View backgroundColor="#ddd" height="30">
+							<Label class="status">
+								Online
+							</Label>
+							<Label class="userName">
+								User Name
+							</Label>
+						</View>
+					</HeaderView>
+					<ListSection dataCollection="userModel">
+						<ListItem  status:image="/images/{status}.png" name:text="{name}" height="50" />
+					</ListSection>
+				</ListView>
+			</View>
 		</View>
 		<View id="createNewModal">
 			<ScrollView id="createNew" layout="vertical">
@@ -46,8 +48,8 @@
 				</Label>
 				<TextField id="loc"/>
 				<View layout="horizontal" id="btnsView">
-					<Button onClick="doCreate" title="Create" id="createBtn"/>
-					<Button onClick="showHide" title="Cancel" id="cancelBtn"/>
+					<Button onClick="doCreate" title="Create" id="createBtn" class="allButtons"/>
+					<Button onClick="showHide" title="Cancel" id="cancelBtn" class="allButtons"/>
 				</View>
 			</ScrollView>
 		</View>

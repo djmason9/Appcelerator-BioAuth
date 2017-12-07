@@ -28,7 +28,8 @@ overrode the settings with other TSS, XML, or JS settings:
 },
 "#bannerImgView" : {
 	image : "/images/banner.png",
-	width : "100%"
+	width : "100%",
+	height : 50
 },
 "TextField" : {
 	color: "black",
