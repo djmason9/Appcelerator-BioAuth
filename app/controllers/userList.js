@@ -11,13 +11,8 @@
 
 function userDetail(e) {
 
-	var json = Alloy.Collections.userModel.at(e.itemIndex).toJSON();
 	var opts = {
-		"id" : json.id,
-		"name" : json.name,
-		"status" : json.status,
-		"phone" : json.phone,
-		"location" : json.location
+		$model : Alloy.Collections.userModel.at(e.itemIndex)
 	},
 	controllerNm = "userDetails";
 
