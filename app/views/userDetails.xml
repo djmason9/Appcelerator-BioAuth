@@ -1,11 +1,18 @@
 <Alloy>
-	<Model src="details"></Model>
+	<Model src="userModel"/>
 	<Window class="container" id="userDetails" title="User Details">
-		<View layout="vertical" top="20">
-			<Label id="detailName">NAME: {details.name}</Label>
-			<Label id="detailStatus">STATUS: {details.status}</Label>
-			<Label id="detailPhone">PHONE: {details.phone}</Label>
-			<Label id="detailLoc">LOCATION: {details.location}</Label>
-		</View>
+		<Button title="Update" onClick="startUpdate" id="updateBtn"/>
+			<View layout="vertical" id="infoView">
+				<Label text="NAME: {userModel.name}"/>
+				<Label text="STATUS: {userModel.status}"/>
+				<Label text="PHONE: {userModel.phone}"/>
+				<Label text="LOCATION: {userModel.location}"/>
+			</View>
+			<View layout="vertical" visible="false" id="editView">
+				<Label text="NAME:"/><TextField value="{userModel.name}" id="nameTxt"/>
+				<Label text="STATUS:"/><TextField value="{userModel.status}" id="statusTxt"/>
+				<Label text="PHONE:"/><TextField value="{userModel.phone}" id="phoneTxt"/>
+				<Label text="LOCATION:"/><TextField value="{userModel.location}" id="locTxt"/>
+			</View>		
 	</Window>
 </Alloy>

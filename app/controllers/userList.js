@@ -2,6 +2,11 @@ var wasShown = false,
     tiUserList = {};
 
 (function main() {
+
+	//reload data each time
+	$.userList.addEventListener('focus', function() {	
+		Alloy.Collections.userModel.fetch();
+	});
 	// Hide nav bar
 	if (OS_IOS) {
 		$.userList.hideNavBar(true, {
@@ -9,14 +14,10 @@ var wasShown = false,
 		});
 	}
 
-	Alloy.Collections.userModel.fetch();
-
 	tiUserList.createNewUser = function() {
 		if ($.name.value) {
 
 			var model = Alloy.createModel("userModel");
-			//could also add this in the XML as <Model src="tasks"/> to create instance
-			// then you would accessess it like var model = Alloy.Models.tasks;
 
 			// saves it to the collection triggers a change event calls backbone sync to cloud for create
 			model.save({
@@ -30,7 +31,7 @@ var wasShown = false,
 				}
 			});
 
-			//clear dataa
+			//clear data
 			$.name.value = "";
 			$.phone.value = "";
 			$.loc.value = "";
@@ -70,16 +71,11 @@ var wasShown = false,
 
 	tiUserList.doUserDetail = function(e) {
 
-		var json = Alloy.Collections.userModel.at(e.itemIndex).toJSON();
 		var opts = {
-				"id" : json.id,
-				"name" : json.name,
-				"status" : json.status,
-				"phone" : json.phone,
-				"location" : json.location
+			$model : Alloy.Collections.userModel.at(e.itemIndex)
 		},
 		controllerNm = "userDetails";
-		
+
 		//Used for real buttons
 		if (OS_IOS) {
 			Alloy.Globals.pushViewOnController(controllerNm, opts);
@@ -87,7 +83,6 @@ var wasShown = false,
 			var win1 = Alloy.createController(controllerNm, opts).getView();
 			win1.open();
 		}
-
 	};
 
 })();

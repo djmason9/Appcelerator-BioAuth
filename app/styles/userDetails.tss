@@ -1,5 +1,21 @@
 ".container" : {
   
+},
+"#updateBtn":{
+	top : 10,
+	right : 10
+},
+"#editView":{
+	top : 30
+},
+"#infoView" : {
+	top : 30
+},
+"Label":{
+	left: 20
+},
+"TextField":{
+	left: 20,
+	width: "85%"
 }
-
 
