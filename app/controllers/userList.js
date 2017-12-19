@@ -26,8 +26,8 @@ var wasShown = false,
 				"location" : $.loc.value,
 				"status" : $.status.value.toLowerCase()
 			}, {
-				success : function() {
-					Alloy.Collections.userModel.add(model);
+				success : function(model, response, options) {		
+					Alloy.Collections.userModel.fetch();//update model with latest ids
 				}
 			});
 
@@ -84,6 +84,21 @@ var wasShown = false,
 			win1.open();
 		}
 	};
+	
+	//Listen for deletes
+	$.userListView.addEventListener("delete", function(e) {
+ 
+        var m = Alloy.Collections.userModel.at(e.itemIndex);
+        m.destroy({
+        	wait:true,
+        	success : function(){
+        		alert("User removed!");
+        	},error: function(){
+        		alert("There was a problem removing user.");
+        	}
+        }); //delete user from API
+
+    });
 
 })();
 
@@ -113,4 +128,5 @@ function showHide(e) {
 function doCreate(e) {
 	tiUserList.createNewUser();
 }
+
 

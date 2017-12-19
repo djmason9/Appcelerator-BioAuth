@@ -1,6 +1,6 @@
 exports.definition = {
 	config: {
-		URL: "http://192.168.1.16:8080/api/userstats",
+		URL: "http://192.168.1.16:8080/api/UserStats",
 		adapter: {
 			type: "restapi",
 			collection_name: "userModel",
@@ -8,7 +8,7 @@ exports.definition = {
 		},
 		headers: {
             "Authorization": 'Basic ' + 
-            Ti.Utils.base64encode('0BpSouyN7Qk7gUbglMPZuJAXgENBihcZ:'),
+            Ti.Utils.base64encode('yH6GxeM9I3ctGmTY7OfZXbDsGFEXFtwl:'),
         },
         parentNode: function(data) {
             data = data || [];

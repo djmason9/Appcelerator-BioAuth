@@ -24,7 +24,7 @@
 						</View>
 					</HeaderView>
 					<ListSection dataCollection="userModel">
-						<ListItem  status:image="/images/{status}.png" name:text="{name}" height="50" />
+						<ListItem  status:image="/images/{status}.png" name:text="{name}" height="50" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" canEdit="true"/>
 					</ListSection>
 				</ListView>
 			</View>
