@@ -1,5 +1,5 @@
 <Alloy>
-    <Window class="container" layout="vertical">
-    	
+    <Window class="container">
+    	<Label>Welcome to Appcelerator</Label>
     </Window>
 </Alloy>
