@@ -19,5 +19,5 @@ var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'mockData/user
 	preparse = file.read().text,
 	response = JSON.parse(preparse);
     
-	mocx.createCollection("userModel", response.UserStats);
+	mocx.createCollection("userModel", response.userstats);
 })();
